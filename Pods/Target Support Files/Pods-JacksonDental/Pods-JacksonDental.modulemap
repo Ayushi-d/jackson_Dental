@@ -1,0 +1,6 @@
+framework module Pods_JacksonDental {
+  umbrella header "Pods-JacksonDental-umbrella.h"
+
+  export *
+  module * { export * }
+}
