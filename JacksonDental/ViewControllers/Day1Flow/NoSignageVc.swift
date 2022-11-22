@@ -44,7 +44,7 @@ class NoSignageVc: UIViewController {
         animated_view.backgroundColor = UIColor.clear
         animated_view.addSubview(alertAnimation)
     }
-    
+
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         firstViewCentre_Constraint.constant += view.bounds.width

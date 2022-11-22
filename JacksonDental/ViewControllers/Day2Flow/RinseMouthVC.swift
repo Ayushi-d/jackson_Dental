@@ -13,6 +13,9 @@ class RinseMouthVC: UIViewController {
     @IBOutlet weak var mainVIew: UIView!
     @IBOutlet weak var animated_view: UIView!
     
+    var abc = ""
+    var zero = 0
+    
     let animation = AnimationView()
     
     override func viewDidLoad() {

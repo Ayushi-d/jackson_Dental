@@ -25,7 +25,7 @@ class LeaveGauzeVC: UIViewController, UNUserNotificationCenterDelegate {
     let timerAnimation = AnimationView()
     var notifcationCounter : Double = 9
     
-    var scheduledTimer: Timer!
+    var scheduledTimer: Timer?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -122,6 +122,16 @@ class LeaveGauzeVC: UIViewController, UNUserNotificationCenterDelegate {
         userNotificationCenter.removeAllPendingNotificationRequests()
     }
     
+    @IBAction func skip_tapped(_ sender: Any) {
+        if scheduledTimer != nil{
+            scheduledTimer?.invalidate()
+        }
+        let level1VC = self.storyboard?.instantiateViewController(withIdentifier: "Level1VC") as! Level1VC
+        userNotificationCenter.removeAllPendingNotificationRequests()
+        self.navigationController?.pushViewController(level1VC, animated: true)
+    }
+    
+    
     func startTimer()
     {
         scheduledTimer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(refreshValue), userInfo: nil, repeats: true)
@@ -139,7 +149,7 @@ class LeaveGauzeVC: UIViewController, UNUserNotificationCenterDelegate {
             setTimeLabel(count)
             if count > 3600 {
                 print("naviagte")
-                scheduledTimer.invalidate()
+                scheduledTimer?.invalidate()
                 scheduleNotification()
                 let level1VC = self.storyboard?.instantiateViewController(withIdentifier: "Level1VC") as! Level1VC
                 userNotificationCenter.removeAllPendingNotificationRequests()
@@ -183,7 +193,7 @@ class LeaveGauzeVC: UIViewController, UNUserNotificationCenterDelegate {
     {
         if scheduledTimer != nil
         {
-            scheduledTimer.invalidate()
+            scheduledTimer?.invalidate()
         }
         setTimerCounting(false)
     }

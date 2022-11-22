@@ -15,7 +15,7 @@ class ExcerciseVC: UIViewController , UNUserNotificationCenterDelegate{
     var count : Int = 0
     var notifcationCounter : Double = 9
 
-    var scheduledTimer: Timer!
+    var scheduledTimer: Timer?
     let userNotificationCenter = UNUserNotificationCenter.current()
     
     @IBOutlet weak var excercise_lbl: UILabel!
@@ -138,6 +138,16 @@ class ExcerciseVC: UIViewController , UNUserNotificationCenterDelegate{
         }
     }
     
+    @IBAction func skip_tapped(_ sender: Any) {
+        if scheduledTimer != nil{
+            scheduledTimer?.invalidate()
+        }
+        let dietVC = self.storyboard?.instantiateViewController(withIdentifier: "DietVC") as! DietVC
+        userNotificationCenter.removeAllPendingNotificationRequests()
+        self.navigationController?.pushViewController(dietVC, animated: true)
+    }
+    
+    
     func scheduleNotification(timeinterval : Double){
         let content = UNMutableNotificationContent()
         content.title = "Jackson Dental"
@@ -172,7 +182,7 @@ extension ExcerciseVC{
                 print("naviagte")
                 
                 userNotificationCenter.removeAllPendingNotificationRequests()
-                scheduledTimer.invalidate()
+                scheduledTimer?.invalidate()
                 timerLabel.text = makeTimeString(hour: 0, min: 0, sec: 10)
                 Img_logo.image = UIImage.init(named: "check-circle")
                 excercise_lbl.text = "Completed!"
@@ -228,7 +238,7 @@ extension ExcerciseVC{
     {
         if scheduledTimer != nil
         {
-            scheduledTimer.invalidate()
+            scheduledTimer?.invalidate()
         }
         setTimerCounting(false)
     }

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="rtZ-Xx-AB7">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="rtZ-Xx-AB7">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -30,13 +30,13 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cMz-Tp-rPP">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="811.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="791.5"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WelcomeVCicon" translatesAutoresizingMaskIntoConstraints="NO" id="LUE-QD-qlu">
-                                                <rect key="frame" x="83" y="30" width="248" height="240"/>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="LUE-QD-qlu">
+                                                <rect key="frame" x="83" y="10" width="248" height="240"/>
                                             </imageView>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ic9-I0-nH5">
-                                                <rect key="frame" x="20" y="294" width="374" height="397.5"/>
+                                                <rect key="frame" x="20" y="274" width="374" height="397.5"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to Tooth Extraction Aftercare!" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CO6-0f-MbR">
                                                         <rect key="frame" x="20" y="20" width="340" height="84"/>
@@ -77,15 +77,16 @@
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Z4-PR-hu1" customClass="ZFRippleButton" customModule="JacksonDental" customModuleProvider="target">
-                                                <rect key="frame" x="20" y="731.5" width="374" height="60"/>
+                                                <rect key="frame" x="20" y="711.5" width="374" height="60"/>
                                                 <color key="backgroundColor" name="NewButtonColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="60" id="AsM-RY-gcD"/>
                                                 </constraints>
-                                                <buttonConfiguration key="configuration" style="plain" title="Get Started">
-                                                    <fontDescription key="titleFontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="18"/>
-                                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                </buttonConfiguration>
+                                                <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="18"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Get Started">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                                         <integer key="value" value="10"/>
@@ -104,7 +105,7 @@
                                             <constraint firstItem="ic9-I0-nH5" firstAttribute="top" secondItem="LUE-QD-qlu" secondAttribute="bottom" constant="24" id="MUl-AU-ODz"/>
                                             <constraint firstItem="7Z4-PR-hu1" firstAttribute="top" secondItem="ic9-I0-nH5" secondAttribute="bottom" constant="40" id="N1n-OK-Q1V"/>
                                             <constraint firstAttribute="bottom" secondItem="7Z4-PR-hu1" secondAttribute="bottom" constant="20" id="NIw-ew-6jz"/>
-                                            <constraint firstItem="LUE-QD-qlu" firstAttribute="top" secondItem="cMz-Tp-rPP" secondAttribute="top" constant="30" id="Uzh-6v-ihq"/>
+                                            <constraint firstItem="LUE-QD-qlu" firstAttribute="top" secondItem="cMz-Tp-rPP" secondAttribute="top" constant="10" id="Uzh-6v-ihq"/>
                                             <constraint firstItem="LUE-QD-qlu" firstAttribute="centerX" secondItem="cMz-Tp-rPP" secondAttribute="centerX" id="gpz-ys-f2q"/>
                                             <constraint firstItem="7Z4-PR-hu1" firstAttribute="trailing" secondItem="ic9-I0-nH5" secondAttribute="trailing" id="huM-J4-o6z"/>
                                             <constraint firstItem="7Z4-PR-hu1" firstAttribute="leading" secondItem="ic9-I0-nH5" secondAttribute="leading" id="n3H-yW-gy6"/>
@@ -146,9 +147,10 @@
         <!--Navigation Controller-->
         <scene sceneID="Bur-g5-Atm">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="rtZ-Xx-AB7" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="rtZ-Xx-AB7" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="W2h-XY-1U7">
+                        <rect key="frame" x="0.0" y="48" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -169,7 +171,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r80-Rx-YBU">
-                                <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                                <rect key="frame" x="0.0" y="48" width="414" height="848"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LrS-zD-wDT">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="819"/>
@@ -200,15 +202,16 @@ for 1 Hour</string>
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FPI-PC-BWg" customClass="ZFRippleButton" customModule="JacksonDental" customModuleProvider="target">
-                                                <rect key="frame" x="20" y="739" width="374" height="60"/>
+                                                <rect key="frame" x="20" y="739" width="179.5" height="60"/>
                                                 <color key="backgroundColor" name="DisableButtonColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="60" id="ooE-EE-iRD"/>
                                                 </constraints>
-                                                <buttonConfiguration key="configuration" style="plain" title="Restart">
-                                                    <fontDescription key="titleFontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="18"/>
-                                                    <color key="baseForegroundColor" name="NewButtonColor"/>
-                                                </buttonConfiguration>
+                                                <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="18"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Restart">
+                                                    <color key="titleColor" name="NewButtonColor"/>
+                                                </state>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                                         <integer key="value" value="10"/>
@@ -260,9 +263,31 @@ for 1 Hour</string>
                                                     <constraint firstItem="IZ2-qr-5dp" firstAttribute="top" secondItem="Mgs-AS-vI4" secondAttribute="top" id="y7l-sU-oAW"/>
                                                 </constraints>
                                             </view>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hEM-CC-L7O" customClass="ZFRippleButton" customModule="JacksonDental" customModuleProvider="target">
+                                                <rect key="frame" x="214.5" y="739" width="179.5" height="60"/>
+                                                <color key="backgroundColor" name="DisableButtonColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="60" id="GWO-BM-DOC"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="18"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Skip">
+                                                    <color key="titleColor" name="NewButtonColor"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="skip_tapped:" destination="mvA-6U-1pz" eventType="touchUpInside" id="0HE-Zz-rVo"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
+                                            <constraint firstItem="hEM-CC-L7O" firstAttribute="trailing" secondItem="rCa-VB-j9A" secondAttribute="trailing" id="09o-NN-xAX"/>
+                                            <constraint firstItem="hEM-CC-L7O" firstAttribute="width" secondItem="FPI-PC-BWg" secondAttribute="width" id="0K8-Sa-Oj1"/>
                                             <constraint firstItem="ydn-RB-f9B" firstAttribute="leading" secondItem="LrS-zD-wDT" secondAttribute="leading" constant="20" id="1HH-J4-S5k"/>
                                             <constraint firstItem="Mgs-AS-vI4" firstAttribute="width" secondItem="LrS-zD-wDT" secondAttribute="width" multiplier="0.65" id="5u8-B5-m20"/>
                                             <constraint firstAttribute="trailing" secondItem="rCa-VB-j9A" secondAttribute="trailing" constant="20" id="72N-mm-4oi"/>
@@ -271,9 +296,10 @@ for 1 Hour</string>
                                             <constraint firstAttribute="trailing" secondItem="ydn-RB-f9B" secondAttribute="trailing" constant="20" id="HAZ-Pl-TNi"/>
                                             <constraint firstItem="Mgs-AS-vI4" firstAttribute="top" secondItem="LrS-zD-wDT" secondAttribute="top" constant="30" id="Jdu-Fm-CnI"/>
                                             <constraint firstItem="ydn-RB-f9B" firstAttribute="top" secondItem="Mgs-AS-vI4" secondAttribute="bottom" constant="40" id="Lv3-c3-O41"/>
+                                            <constraint firstItem="FPI-PC-BWg" firstAttribute="width" secondItem="rCa-VB-j9A" secondAttribute="width" multiplier="0.48" id="MCa-DZ-5yq"/>
                                             <constraint firstItem="tzP-S2-6A0" firstAttribute="top" secondItem="ydn-RB-f9B" secondAttribute="bottom" constant="60" id="Yue-H5-jUY"/>
+                                            <constraint firstItem="hEM-CC-L7O" firstAttribute="top" secondItem="FPI-PC-BWg" secondAttribute="top" id="cMy-t5-TmY"/>
                                             <constraint firstItem="rCa-VB-j9A" firstAttribute="leading" secondItem="LrS-zD-wDT" secondAttribute="leading" constant="20" id="dFU-by-YbI"/>
-                                            <constraint firstItem="FPI-PC-BWg" firstAttribute="trailing" secondItem="rCa-VB-j9A" secondAttribute="trailing" id="df9-pd-Gcp"/>
                                             <constraint firstAttribute="bottom" secondItem="FPI-PC-BWg" secondAttribute="bottom" constant="20" id="fk0-mD-MEE"/>
                                             <constraint firstItem="Mgs-AS-vI4" firstAttribute="centerX" secondItem="LrS-zD-wDT" secondAttribute="centerX" id="gW6-hX-KM4"/>
                                             <constraint firstItem="FPI-PC-BWg" firstAttribute="top" secondItem="rCa-VB-j9A" secondAttribute="bottom" constant="20" id="iyF-v1-Srt"/>
@@ -324,7 +350,7 @@ for 1 Hour</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="check-circle" translatesAutoresizingMaskIntoConstraints="NO" id="oDz-VH-4dY">
-                                <rect key="frame" x="87" y="94" width="240" height="240"/>
+                                <rect key="frame" x="87" y="98" width="240" height="240"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Level 1 Accomplished!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RDV-tG-41Z">
                                 <rect key="frame" x="41.5" y="467.5" width="331" height="101"/>
@@ -338,10 +364,11 @@ for 1 Hour</string>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="AdX-QE-soc"/>
                                 </constraints>
-                                <buttonConfiguration key="configuration" style="plain" title="Next">
-                                    <fontDescription key="titleFontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="18"/>
-                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </buttonConfiguration>
+                                <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="18"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Next">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                         <integer key="value" value="10"/>
@@ -388,7 +415,7 @@ for 1 Hour</string>
                                 <rect key="frame" x="0.0" y="44" width="414" height="852"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sSr-rX-nyY">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="818"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="814"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="77b-yj-4Kq">
                                                 <rect key="frame" x="20" y="310" width="374" height="255.5"/>
@@ -523,15 +550,16 @@ for 1 Hour</string>
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BVu-Pg-HvF" customClass="ZFRippleButton" customModule="JacksonDental" customModuleProvider="target">
-                                                <rect key="frame" x="20" y="738" width="374" height="60"/>
+                                                <rect key="frame" x="20" y="734" width="374" height="60"/>
                                                 <color key="backgroundColor" name="NewButtonColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="60" id="TbW-Hn-rza"/>
                                                 </constraints>
-                                                <buttonConfiguration key="configuration" style="plain" title="Next">
-                                                    <fontDescription key="titleFontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="18"/>
-                                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                </buttonConfiguration>
+                                                <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="18"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Next">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                                         <integer key="value" value="10"/>
@@ -615,7 +643,7 @@ for 1 Hour</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tJX-e5-Iyz">
-                                <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                                <rect key="frame" x="0.0" y="48" width="414" height="848"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yIM-sJ-6P1">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="847"/>
@@ -668,7 +696,7 @@ for 1 Hour</string>
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wYc-1y-5JJ" customClass="ZFRippleButton" customModule="JacksonDental" customModuleProvider="target">
-                                                <rect key="frame" x="20" y="767" width="374" height="60"/>
+                                                <rect key="frame" x="20" y="767" width="179.5" height="60"/>
                                                 <color key="backgroundColor" name="DisableButtonColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="60" id="g8v-Lp-aZe"/>
@@ -713,19 +741,42 @@ for 1 Hour</string>
                                                     <action selector="startTimer_tapped:" destination="fpZ-Le-dvx" eventType="touchUpInside" id="9C5-OI-iHb"/>
                                                 </connections>
                                             </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pSJ-8w-ds9" customClass="ZFRippleButton" customModule="JacksonDental" customModuleProvider="target">
+                                                <rect key="frame" x="214.5" y="767" width="179.5" height="60"/>
+                                                <color key="backgroundColor" name="DisableButtonColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="60" id="MVF-7t-AVl"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="18"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Skip">
+                                                    <color key="titleColor" name="NewButtonColor"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="skip_tapped:" destination="fpZ-Le-dvx" eventType="touchUpInside" id="hBd-Wb-8wI"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstItem="61B-e3-hq0" firstAttribute="centerX" secondItem="yIM-sJ-6P1" secondAttribute="centerX" id="0gy-sJ-lab"/>
                                             <constraint firstItem="wYc-1y-5JJ" firstAttribute="top" secondItem="ihB-y8-KEx" secondAttribute="bottom" constant="20" id="1YG-Jy-zWj"/>
                                             <constraint firstItem="61B-e3-hq0" firstAttribute="top" secondItem="ak5-8F-eXG" secondAttribute="bottom" constant="50" id="2fm-f5-GmG"/>
-                                            <constraint firstItem="wYc-1y-5JJ" firstAttribute="trailing" secondItem="ihB-y8-KEx" secondAttribute="trailing" id="BeO-jY-WUo"/>
                                             <constraint firstItem="ihB-y8-KEx" firstAttribute="leading" secondItem="yIM-sJ-6P1" secondAttribute="leading" constant="20" id="DLL-O4-fdS"/>
                                             <constraint firstItem="wYc-1y-5JJ" firstAttribute="leading" secondItem="ihB-y8-KEx" secondAttribute="leading" id="Fap-mJ-Ie5"/>
                                             <constraint firstItem="ak5-8F-eXG" firstAttribute="top" secondItem="yIM-sJ-6P1" secondAttribute="top" constant="30" id="GEk-Ga-k2q"/>
+                                            <constraint firstItem="pSJ-8w-ds9" firstAttribute="top" secondItem="wYc-1y-5JJ" secondAttribute="top" id="K61-ye-zIY"/>
+                                            <constraint firstItem="pSJ-8w-ds9" firstAttribute="width" secondItem="wYc-1y-5JJ" secondAttribute="width" id="M08-Cc-vYn"/>
+                                            <constraint firstItem="pSJ-8w-ds9" firstAttribute="trailing" secondItem="ihB-y8-KEx" secondAttribute="trailing" id="M6O-fy-gmP"/>
                                             <constraint firstItem="RjL-IN-agO" firstAttribute="width" secondItem="yIM-sJ-6P1" secondAttribute="width" multiplier="0.85" id="Q4s-gJ-X5g"/>
                                             <constraint firstAttribute="bottom" secondItem="wYc-1y-5JJ" secondAttribute="bottom" constant="20" id="QAe-xY-Npn"/>
                                             <constraint firstAttribute="trailing" secondItem="ihB-y8-KEx" secondAttribute="trailing" constant="20" id="R3K-fp-fIX"/>
+                                            <constraint firstItem="wYc-1y-5JJ" firstAttribute="width" secondItem="ihB-y8-KEx" secondAttribute="width" multiplier="0.48" id="TnC-FZ-Q4O"/>
                                             <constraint firstItem="RjL-IN-agO" firstAttribute="centerX" secondItem="yIM-sJ-6P1" secondAttribute="centerX" id="WZN-99-dNY"/>
                                             <constraint firstItem="ak5-8F-eXG" firstAttribute="centerX" secondItem="yIM-sJ-6P1" secondAttribute="centerX" id="Z5y-Wd-ImX"/>
                                             <constraint firstItem="RjL-IN-agO" firstAttribute="top" secondItem="61B-e3-hq0" secondAttribute="bottom" constant="30" id="cQT-bC-CTv"/>
@@ -780,7 +831,7 @@ for 1 Hour</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mmf-a4-1Nl">
-                                <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                                <rect key="frame" x="0.0" y="48" width="414" height="848"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OtD-aB-eue">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="827.5"/>
@@ -841,10 +892,11 @@ can eat?</string>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="60" id="XeJ-xN-Hpj"/>
                                                 </constraints>
-                                                <buttonConfiguration key="configuration" style="plain" title="Next">
-                                                    <fontDescription key="titleFontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="18"/>
-                                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                </buttonConfiguration>
+                                                <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="18"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Next">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                                         <integer key="value" value="10"/>
@@ -908,7 +960,7 @@ can eat?</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Daycompleteicon" translatesAutoresizingMaskIntoConstraints="NO" id="W20-er-CRR">
-                                <rect key="frame" x="87" y="94" width="240" height="240"/>
+                                <rect key="frame" x="87" y="98" width="240" height="240"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Bh-dr-rhS" customClass="ZFRippleButton" customModule="JacksonDental" customModuleProvider="target">
                                 <rect key="frame" x="20" y="782" width="374" height="60"/>
@@ -916,10 +968,11 @@ can eat?</string>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="1OR-jF-4qt"/>
                                 </constraints>
-                                <buttonConfiguration key="configuration" style="plain" title="Close">
-                                    <fontDescription key="titleFontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="18"/>
-                                    <color key="baseForegroundColor" name="NewButtonColor"/>
-                                </buttonConfiguration>
+                                <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="18"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Close">
+                                    <color key="titleColor" name="NewButtonColor"/>
+                                </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                         <integer key="value" value="10"/>
@@ -930,7 +983,7 @@ can eat?</string>
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="COm-2t-Sms">
-                                <rect key="frame" x="20.5" y="374" width="373" height="210"/>
+                                <rect key="frame" x="20.5" y="378" width="373" height="210"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Day 1 Completed" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y2s-Dl-EtX">
                                         <rect key="frame" x="20" y="20" width="291" height="48"/>
@@ -988,13 +1041,13 @@ can eat?</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WaE-Ck-eK3">
-                                <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                                <rect key="frame" x="0.0" y="48" width="414" height="848"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hb2-LO-LWq">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="771"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="671"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TAR-r6-gDr">
-                                                <rect key="frame" x="20" y="310" width="374" height="221"/>
+                                                <rect key="frame" x="20" y="290" width="374" height="221"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to Tooth Extraction Aftercare!" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iia-AI-S9b">
                                                         <rect key="frame" x="20" y="20" width="340" height="87"/>
@@ -1026,15 +1079,16 @@ can eat?</string>
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tLN-Jg-EfI" customClass="ZFRippleButton" customModule="JacksonDental" customModuleProvider="target">
-                                                <rect key="frame" x="20" y="691" width="374" height="60"/>
+                                                <rect key="frame" x="20" y="591" width="374" height="60"/>
                                                 <color key="backgroundColor" name="NewButtonColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="60" id="wzh-gX-jvR"/>
                                                 </constraints>
-                                                <buttonConfiguration key="configuration" style="plain" title="Next">
-                                                    <fontDescription key="titleFontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="18"/>
-                                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                </buttonConfiguration>
+                                                <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="18"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Next">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                                         <integer key="value" value="10"/>
@@ -1045,7 +1099,7 @@ can eat?</string>
                                                 </connections>
                                             </button>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WelcomeVCicon" translatesAutoresizingMaskIntoConstraints="NO" id="hBw-4B-tKR">
-                                                <rect key="frame" x="72.5" y="30" width="269" height="240"/>
+                                                <rect key="frame" x="72.5" y="10" width="269" height="240"/>
                                             </imageView>
                                         </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1053,9 +1107,9 @@ can eat?</string>
                                             <constraint firstItem="hBw-4B-tKR" firstAttribute="centerX" secondItem="hb2-LO-LWq" secondAttribute="centerX" id="63L-om-Yv1"/>
                                             <constraint firstItem="tLN-Jg-EfI" firstAttribute="trailing" secondItem="TAR-r6-gDr" secondAttribute="trailing" id="Q5r-Tn-4np"/>
                                             <constraint firstItem="TAR-r6-gDr" firstAttribute="leading" secondItem="hb2-LO-LWq" secondAttribute="leading" constant="20" id="WhK-df-yXb"/>
-                                            <constraint firstItem="hBw-4B-tKR" firstAttribute="top" secondItem="hb2-LO-LWq" secondAttribute="top" constant="30" id="c60-sm-CEC"/>
+                                            <constraint firstItem="hBw-4B-tKR" firstAttribute="top" secondItem="hb2-LO-LWq" secondAttribute="top" constant="10" id="c60-sm-CEC"/>
                                             <constraint firstItem="tLN-Jg-EfI" firstAttribute="leading" secondItem="TAR-r6-gDr" secondAttribute="leading" id="dgL-oB-3C6"/>
-                                            <constraint firstItem="tLN-Jg-EfI" firstAttribute="top" secondItem="TAR-r6-gDr" secondAttribute="bottom" constant="160" id="fvT-B5-otZ"/>
+                                            <constraint firstItem="tLN-Jg-EfI" firstAttribute="top" secondItem="TAR-r6-gDr" secondAttribute="bottom" constant="80" id="fvT-B5-otZ"/>
                                             <constraint firstItem="hBw-4B-tKR" firstAttribute="width" secondItem="hb2-LO-LWq" secondAttribute="width" multiplier="0.65" id="hJ3-F1-6rE"/>
                                             <constraint firstItem="TAR-r6-gDr" firstAttribute="top" secondItem="hBw-4B-tKR" secondAttribute="bottom" constant="40" id="kJg-gO-icC"/>
                                             <constraint firstAttribute="bottom" secondItem="tLN-Jg-EfI" secondAttribute="bottom" constant="20" id="lOA-WY-Dhx"/>
@@ -1103,10 +1157,10 @@ can eat?</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GTW-dZ-Hy0">
-                                <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                                <rect key="frame" x="0.0" y="48" width="414" height="848"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Ag-SN-B1d">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="762"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="652"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9IQ-2C-EL8">
                                                 <rect key="frame" x="20" y="310" width="374" height="182"/>
@@ -1141,15 +1195,16 @@ can eat?</string>
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tHh-nt-zFd" customClass="ZFRippleButton" customModule="JacksonDental" customModuleProvider="target">
-                                                <rect key="frame" x="20" y="682" width="374" height="60"/>
+                                                <rect key="frame" x="20" y="572" width="374" height="60"/>
                                                 <color key="backgroundColor" name="NewButtonColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="60" id="SFO-wK-gYY"/>
                                                 </constraints>
-                                                <buttonConfiguration key="configuration" style="plain" title="Next">
-                                                    <fontDescription key="titleFontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="18"/>
-                                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                </buttonConfiguration>
+                                                <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="18"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Next">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                                         <integer key="value" value="10"/>
@@ -1185,7 +1240,7 @@ can eat?</string>
                                             <constraint firstItem="tHh-nt-zFd" firstAttribute="leading" secondItem="9IQ-2C-EL8" secondAttribute="leading" id="Z2s-Yz-DaE"/>
                                             <constraint firstItem="tHh-nt-zFd" firstAttribute="trailing" secondItem="9IQ-2C-EL8" secondAttribute="trailing" id="f4H-VI-cha"/>
                                             <constraint firstAttribute="trailing" secondItem="9IQ-2C-EL8" secondAttribute="trailing" constant="20" id="mvf-jw-Lrs"/>
-                                            <constraint firstItem="tHh-nt-zFd" firstAttribute="top" secondItem="9IQ-2C-EL8" secondAttribute="bottom" constant="190" id="vac-jU-3tz"/>
+                                            <constraint firstItem="tHh-nt-zFd" firstAttribute="top" secondItem="9IQ-2C-EL8" secondAttribute="bottom" constant="80" id="vac-jU-3tz"/>
                                             <constraint firstItem="9IQ-2C-EL8" firstAttribute="leading" secondItem="3Ag-SN-B1d" secondAttribute="leading" constant="20" id="w5O-iA-Cat"/>
                                         </constraints>
                                     </view>
@@ -1230,10 +1285,10 @@ can eat?</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="873-i3-ey5">
-                                <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                                <rect key="frame" x="0.0" y="48" width="414" height="848"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xji-6W-S2I">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="823"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="803"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ia8-KV-JGm">
                                                 <rect key="frame" x="20" y="310" width="374" height="333"/>
@@ -1269,15 +1324,16 @@ can eat?</string>
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IJJ-8a-nqs" customClass="ZFRippleButton" customModule="JacksonDental" customModuleProvider="target">
-                                                <rect key="frame" x="20" y="743" width="374" height="60"/>
+                                                <rect key="frame" x="20" y="723" width="374" height="60"/>
                                                 <color key="backgroundColor" name="NewButtonColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="60" id="REw-gb-PRB"/>
                                                 </constraints>
-                                                <buttonConfiguration key="configuration" style="plain" title="Next">
-                                                    <fontDescription key="titleFontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="18"/>
-                                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                </buttonConfiguration>
+                                                <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="18"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Next">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                                         <integer key="value" value="10"/>
@@ -1311,7 +1367,7 @@ can eat?</string>
                                             <constraint firstItem="Ia8-KV-JGm" firstAttribute="top" secondItem="FaZ-Pn-HpO" secondAttribute="bottom" constant="40" id="Tnf-B3-YVY"/>
                                             <constraint firstAttribute="bottom" secondItem="IJJ-8a-nqs" secondAttribute="bottom" constant="20" id="ZNt-Ea-gAo"/>
                                             <constraint firstItem="FaZ-Pn-HpO" firstAttribute="top" secondItem="xji-6W-S2I" secondAttribute="top" constant="30" id="cbn-oU-Bir"/>
-                                            <constraint firstItem="IJJ-8a-nqs" firstAttribute="top" secondItem="Ia8-KV-JGm" secondAttribute="bottom" constant="100" id="hrZ-by-O96"/>
+                                            <constraint firstItem="IJJ-8a-nqs" firstAttribute="top" secondItem="Ia8-KV-JGm" secondAttribute="bottom" constant="80" id="hrZ-by-O96"/>
                                             <constraint firstItem="FaZ-Pn-HpO" firstAttribute="width" secondItem="xji-6W-S2I" secondAttribute="width" multiplier="0.65" id="w8r-mC-KYK"/>
                                             <constraint firstItem="FaZ-Pn-HpO" firstAttribute="centerX" secondItem="xji-6W-S2I" secondAttribute="centerX" id="wI2-Ne-d0w"/>
                                             <constraint firstItem="Ia8-KV-JGm" firstAttribute="leading" secondItem="xji-6W-S2I" secondAttribute="leading" constant="20" id="zp8-bz-XbZ"/>
@@ -1646,10 +1702,11 @@ of each hour as needed.</string>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="60" id="X3F-xO-Qi1"/>
                                                 </constraints>
-                                                <buttonConfiguration key="configuration" style="plain" title="Video Call Doctor">
-                                                    <fontDescription key="titleFontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="18"/>
-                                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                </buttonConfiguration>
+                                                <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="18"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Video Call Doctor">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                                         <integer key="value" value="10"/>
@@ -1666,10 +1723,11 @@ of each hour as needed.</string>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="60" id="uE6-If-8WB"/>
                                                 </constraints>
-                                                <buttonConfiguration key="configuration" style="plain" title="Restart Progress">
-                                                    <fontDescription key="titleFontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="18"/>
-                                                    <color key="baseForegroundColor" name="NewButtonColor"/>
-                                                </buttonConfiguration>
+                                                <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="18"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Restart Progress">
+                                                    <color key="titleColor" name="NewButtonColor"/>
+                                                </state>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                                         <integer key="value" value="10"/>
@@ -1756,43 +1814,49 @@ of each hour as needed.</string>
     </scenes>
     <designables>
         <designable name="7Z4-PR-hu1">
-            <size key="intrinsicContentSize" width="128" height="39.5"/>
+            <size key="intrinsicContentSize" width="104" height="38"/>
         </designable>
         <designable name="9Bh-dr-rhS">
-            <size key="intrinsicContentSize" width="75.5" height="39.5"/>
+            <size key="intrinsicContentSize" width="52" height="38"/>
         </designable>
         <designable name="Ag6-3u-BXD">
-            <size key="intrinsicContentSize" width="182.5" height="39.5"/>
+            <size key="intrinsicContentSize" width="159" height="38"/>
         </designable>
         <designable name="BVu-Pg-HvF">
-            <size key="intrinsicContentSize" width="65.5" height="39.5"/>
+            <size key="intrinsicContentSize" width="42" height="38"/>
         </designable>
         <designable name="FPI-PC-BWg">
-            <size key="intrinsicContentSize" width="90" height="39.5"/>
+            <size key="intrinsicContentSize" width="66" height="38"/>
         </designable>
         <designable name="IJJ-8a-nqs">
-            <size key="intrinsicContentSize" width="65.5" height="39.5"/>
+            <size key="intrinsicContentSize" width="42" height="38"/>
         </designable>
         <designable name="PYt-GL-zyP">
-            <size key="intrinsicContentSize" width="65.5" height="39.5"/>
+            <size key="intrinsicContentSize" width="42" height="38"/>
         </designable>
         <designable name="fLA-qc-YTg">
-            <size key="intrinsicContentSize" width="65.5" height="39.5"/>
+            <size key="intrinsicContentSize" width="42" height="38"/>
+        </designable>
+        <designable name="hEM-CC-L7O">
+            <size key="intrinsicContentSize" width="39" height="38"/>
         </designable>
         <designable name="i3Z-a3-liS">
-            <size key="intrinsicContentSize" width="174.5" height="39.5"/>
+            <size key="intrinsicContentSize" width="151" height="38"/>
         </designable>
         <designable name="ihB-y8-KEx">
             <size key="intrinsicContentSize" width="102" height="38"/>
+        </designable>
+        <designable name="pSJ-8w-ds9">
+            <size key="intrinsicContentSize" width="39" height="38"/>
         </designable>
         <designable name="rCa-VB-j9A">
             <size key="intrinsicContentSize" width="102" height="38"/>
         </designable>
         <designable name="tHh-nt-zFd">
-            <size key="intrinsicContentSize" width="65.5" height="39.5"/>
+            <size key="intrinsicContentSize" width="42" height="38"/>
         </designable>
         <designable name="tLN-Jg-EfI">
-            <size key="intrinsicContentSize" width="65.5" height="39.5"/>
+            <size key="intrinsicContentSize" width="42" height="38"/>
         </designable>
         <designable name="wYc-1y-5JJ">
             <size key="intrinsicContentSize" width="66" height="38"/>
@@ -1805,6 +1869,7 @@ of each hour as needed.</string>
         <image name="Discomfrticon" width="70" height="70"/>
         <image name="FoodsIcon" width="240" height="240"/>
         <image name="LeaveGauzeIcon" width="240" height="240"/>
+        <image name="Logo" width="240" height="240"/>
         <image name="Nosmoke" width="70" height="70"/>
         <image name="Rinseicon" width="240" height="240"/>
         <image name="WelcomeVCicon" width="240" height="240"/>

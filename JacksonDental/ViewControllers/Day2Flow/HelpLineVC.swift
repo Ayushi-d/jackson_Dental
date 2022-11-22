@@ -56,7 +56,7 @@ class HelpLineVC: UIViewController {
     }
     
     @IBAction func restart_tapped(_ sender: Any) {
-        
+        self.navigationController?.popToRootViewController(animated: true)
     }
     
 }

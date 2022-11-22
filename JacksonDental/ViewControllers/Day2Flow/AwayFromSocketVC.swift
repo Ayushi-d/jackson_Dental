@@ -40,5 +40,5 @@ class AwayFromSocketVC: UIViewController {
         vc.comefrom = "away"
         self.navigationController?.pushViewController(vc, animated: true)
     }
-
+    
 }

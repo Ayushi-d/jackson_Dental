@@ -31,10 +31,9 @@ class Welcome2VC: UIViewController {
    
     
     @IBAction func next_tapped(_ sender: UIButton) {
-        
+    
         let vc = self.storyboard?.instantiateViewController(withIdentifier: "RinseMouthVC") as! RinseMouthVC
         self.navigationController?.pushViewController(vc, animated: true)
     }
     
-
 }
